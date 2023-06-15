@@ -2,6 +2,7 @@ import { useState,useEffect } from "react";
 import Nav from "../components/Nav";
 import { useParams, Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import backIMG from "../assets/Vector.png"
 
 
 const Detail = () => {
@@ -61,7 +62,7 @@ const Detail = () => {
                                 <p>First Brewed: {data[searchKey].first_brewed}</p>
                                 <p>Attenuation level: {data[searchKey].attenuation_level}</p>
                                 <h6>{data[searchKey].description}</h6>
-                                <a onClick={NavBack}><img src="../../public/Vector.png" alt="" /></a>
+                                <a onClick={NavBack}><img src={backIMG} alt="" /></a>
 
                             </div>
                         </div>
